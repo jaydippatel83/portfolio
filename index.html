@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecrunch Tech School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/cc.png" width="70" height="70">
+        </div>
+        <ul class="desktop-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="menu-links menu-collapsed">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <div id="about" class="hero-section">
+        <div class="left-section">
+            <span>Web Development | Content Creator</span>
+            <h1>My awesome portfolio</h1>
+            <p>I'm a skilled software developer who loves to create high-performing and optimized applications with
+                organized architecture using React and similar modern frameworks. Proficient in product designing.</p>
+        </div>
+        <div class="right-section">
+            <img src="images/jd.png">
+        </div>
+    </div>
+    <section class="logos-section">
+        <hr width="90%" />
+        <div class="flex-logos">
+            <img width="100" src="images/tech/html.png" alt="">
+            <img width="100" src="images/tech/css.png" alt="">
+            <img width="100" src="images/tech/git.png" alt="">
+            <img width="100" src="images/tech/javascript.png" alt="">
+            <img width="100" src="images/tech/reactjs.png" alt="">
+        </div>
+        <hr width="90%" />
+    </section>
+
+    <section class="product-section">
+        <div class="product">
+            <img src="images/skill/web-design.png" alt="">
+            <h2>Web Design</h2>
+            <p>Passionate web designer transforming visions into captivating online experiences through innovative
+                design and coding expertise.</p>
+        </div>
+        <div class="product">
+            <img src="images/skill/programming.png" alt="">
+            <h2>Web Developement</h2>
+            <p>Dedicated web developer proficient in coding and building robust, dynamic websites to enhance online
+                presence and functionality.</p>
+        </div>
+        <div class="product">
+            <img src="images/skill/web-content.png" alt="">
+            <h2>Content Creation</h2>
+            <p>I create engaging content, whether it's writing, videos, or images, to entertain and inform people.</p>
+        </div>
+    </section>
+    <section id="work" class="work-main-section">
+        <h2>My Latest Work</h2>
+        <p class="work-p">Following Projects showcases my skills and experience through real world example of my work.
+            Each project is
+            breifly describe with links to code repositories and live demos in it. </p>
+        <div class="work-section">
+            <div class="work-items">
+                <img src="images/superfun.png">
+                <h2>Superfun.social</h2>
+                <p>SuperFun is A social meme app built with Lens Protocol where meme artists get rewarded with
+                    crypto for super fun content and brands can create contests to crowdsource memes from the best
+                    artists.</p>
+            </div>
+            <div class="work-items">
+                <img src="images/slingshot.png">
+                <h2>Slingshot Rentals</h2>
+                <p>Web-based platform that allows users to search, book, and manage Slingshots rentals from various
+                    providers, providing a convenient and efficient solution for Slingshots rentals.</p>
+            </div>
+            <div class="work-items">
+                <img src="images/trustified.png">
+                <h2>Trustified</h2>
+                <p>Trustified is a platform to issue forgery proof digital certificates and badges on Blockchain.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-img">
+            <img src="images/contect.png">
+        </div>
+        <div class="contect-form">
+            <h2>Get in Touch</h2>
+            <div>
+                <input type="text" placeholder="Name" class="input-name">
+            </div>
+            <div>
+                <input type="email" placeholder="Email Id" class="input-email">
+            </div>
+            <div>
+                <textarea rows="5" placeholder="Your Message" class="input-message"></textarea>
+            </div>
+            <button class="submit-btn">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design By Jaydip patel</p>
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/jaydip.patel.1432/"><img
+                        src="images/social-icons/facebook.png" alt="facebook"></a></li>
+            <li><a target="_blank" href="https://twitter.com/jaydippatel83"><img src="images/social-icons/twitter.png"
+                        alt="twitter"></a></li>
+            <li><a target="_blank" href="https://linkedin.com/in/jaydip-patel-a758a0176/"><img
+                        src="images/social-icons/linkedin.png" alt="linkedin"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/Jaydip_patel_83"><img
+                        src="images/social-icons/instagram.png" alt="instagram"></a></li>
+            <li><a target="_blank" href="https://github.com/jaydippatel83"><img src="images/social-icons/github.png"
+                        alt="github"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+        const menuLinks = document.querySelector(".menu-links");
+
+        mobileMenuIcon.addEventListener("click", () => {
+            menuLinks.classList.toggle("active");
+            menuLinks.classList.toggle("menu-collapsed");
+        });
+    </script>
+</body>
+
+</html>
